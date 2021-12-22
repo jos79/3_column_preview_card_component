@@ -1,0 +1,91 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+body {
+    width: 100%;
+    background-color: var(--Very-light-gray);
+}
+.cards-container {
+    margin: 90px auto;
+    width: 325px;
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cards-container article:nth-child(1){
+    background-color: var(--bright-orange);
+}
+.cards-container article:nth-child(2){
+    background-color: var(--dark-cyan);
+}
+.cards-container article:nth-child(3){
+    background-color: var(--very-dark-cyan);
+}
+.cards-container article {
+    /* width: 325px; */
+    padding: 50px;
+    font-size: 15px;
+}
+.cards-container article h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+    font-size: 40px;
+    margin: 30px 0 25px;
+}
+.cards-container article p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.cards-container button{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    background-color: var(--Very-light-gray);
+    border-radius: 30px;
+    padding: 10px 30px;    
+    border: 2px solid var(--Very-light-gray);
+}
+.cards-container .button1{
+    color: var(--bright-orange);
+}
+.cards-container .button1:hover{
+    background-color: var(--bright-orange);
+    color: var(--Very-light-gray);
+    cursor: pointer;
+}
+.cards-container .button2{
+    color: var(--dark-cyan);
+}
+.cards-container .button2:hover{
+    background-color: var(--dark-cyan);
+    color: var(--Very-light-gray);
+    cursor: pointer;
+}
+.cards-container .button3{
+    color: var(--very-dark-cyan);
+}
+.cards-container .button3:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--Very-light-gray);
+    cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+    .cards-container {
+        flex-direction: row;
+        width: 930px;
+    }
+    .cards-container article {
+        width: 310px;
+        /* min-width: 310px; */
+    }
+}
